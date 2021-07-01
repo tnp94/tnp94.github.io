@@ -1,0 +1,39 @@
+body {
+   background-color: black;
+}
+
+div {
+   box-sizing: border-box;
+}
+
+#megaboard {
+   width: 100%;
+   height: 30vh;
+   /* border: 1px solid black; */
+}
+
+.main-container {
+   height: 50vh;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+}
+
+.card {
+   border: 1px solid black;
+   height: 40px;
+}
+
+.sidebar {
+   border: 1px solid black;
+   grid-column: 1/4;
+   background-color: #CAD2C5;
+}
+
+.main-content {
+   border: 1px solid black;
+   grid-column: 4/13;
+   background-color: #CAD2C5;
+}

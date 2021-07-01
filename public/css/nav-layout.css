@@ -1,0 +1,25 @@
+nav {
+   background-color: #52796F;
+}
+
+nav li {
+   list-style: none;
+   text-align: center;
+   padding: 10px 5px;
+   font-weight: bold;
+   font-size: 2em;
+   color: black;
+}
+
+nav ul {
+   margin: 0;
+}
+
+nav a {
+   display: inline-block;
+   text-decoration: none;
+   /* background-color: #84A98C; */
+   border-bottom: 4px solid black;
+   box-sizing: border-box;
+   margin: 0 5px;
+}
