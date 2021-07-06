@@ -6,10 +6,14 @@ div {
    box-sizing: border-box;
 }
 
-#megaboard {
-   width: 100%;
-   height: 30vh;
+.megaboard {
+   background-color: black;
+   color: #CAD2C5;
    /* border: 1px solid black; */
+}
+
+.profile-image {
+   height: auto;
 }
 
 .main-container {
