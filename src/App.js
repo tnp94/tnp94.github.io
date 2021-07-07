@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Projects from './components/Projects';
+import Home from './components/Home';
 import { Redirect, Route, HashRouter as Router , Switch } from "react-router-dom";
 
 function App() {
@@ -19,8 +20,8 @@ function App() {
         <Header />
         <Navbar />
         <Switch>
-          <Route component={Projects} exact={true} path="/" />
-          <Route component={Projects} exact={true} path="/projects" />
+          <Route component={Projects} path="/projects" />
+          <Route component={Home} path="/" />
         </Switch>
       </Router>
     </div>
