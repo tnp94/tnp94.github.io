@@ -8,9 +8,9 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <nav className="container-fluid p-0 pr-sm-2 pl-sm-2">
+            <nav className="container-fluid p-0 pr-sm-2 pl-sm-2 sticky-top border border-dark">
                 <ul className="row m-0 p-0">
-                    <a className="col-sm" href="/#"><li>Home</li></a>
+                    <a className="col-sm" href="/"><li>Home</li></a>
                     <a className="col-sm" href="/#/projects"><li>Projects</li></a>
                     <a className="col-sm" href="/#/contact"><li>Contact</li></a>
                 </ul>

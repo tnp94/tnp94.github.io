@@ -15,7 +15,7 @@ class Home extends React.Component {
                     <a href="https://1drv.ms/b/s!Al2YMosquu6wiZNgDm8idWR_Slw-ow?e=Jr0zus">Resume</a>
                 </div>
                 <div className="main-content">
-                    <h1>Hello, welcome to my portfolio website</h1>
+                    <h2>Hello, welcome to my portfolio website</h2>
                     <p>This website is still a work in progress. Feel free to check out my resume or my github page <a href="https://github.com/tnp94">here</a></p>
                 </div>
             </div>
