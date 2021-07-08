@@ -12,6 +12,7 @@ class Projects extends React.Component {
             <div className="main-container grid">
                 <div className="sidebar">
                     <Link to="/projects/project1">Project 1</Link>
+                    <Link to="/projects/project2">Project 2</Link>
                 </div>
                 <main className="main-content">
                     <Switch>
