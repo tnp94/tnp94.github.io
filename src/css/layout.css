@@ -41,3 +41,9 @@ div {
    grid-column: 4/13;
    background-color: #CAD2C5;
 }
+
+.subnav-item {
+   list-style-type: none;
+   text-decoration: underline;
+   color: #52796F;
+}
