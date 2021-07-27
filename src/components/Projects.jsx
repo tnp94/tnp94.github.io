@@ -47,9 +47,21 @@ function ProjectList() {
 
 function Project() {
     let { projectId } = useParams();
-    return (
-        <h2>Show Project {projectId} here</h2>
-    )
+    switch (projectId)
+    {
+        case "project1":
+        {
+            return (
+                <h2>Let's decide which project will be project1</h2>
+            )
+        }
+        default:
+        {
+            return (
+                <h2>Show Project {projectId} here</h2>
+            )
+        }
+    }
 
 }
 
