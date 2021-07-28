@@ -11,7 +11,7 @@ class Projects extends React.Component {
         return (
             <div className="main-container grid">
                 <div className="sidebar">
-                    <h2>Projects</h2>
+                    <h3>Projects</h3>
                     <ul className="p-0 font-weight-bold">
                         <li className="subnav-item">
                             <Link className="text-dark" to="/projects/project1">Project 1</Link>
