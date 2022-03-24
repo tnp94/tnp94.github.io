@@ -29,6 +29,7 @@ class Projects extends React.Component {
                     <Switch>
                         <Route path={`/projects`}>
                             <ProjectList />
+                            <div id="projectContainer"></div>
                         </Route>
 
                     </Switch>
@@ -40,36 +41,35 @@ class Projects extends React.Component {
 
 function ProjectList() {
     let match = useRouteMatch();
+    ClearProject();
     return (
         <Switch>
             <Route path={`${match.path}/:projectId`}>
-                <div>
-                    <ClearProject />
                 <Project />
-                </div>
             </Route>
         </Switch>
     )
 }
 
 function ClearProject() {
-    let current = document.getElementById('projectContainer');
-    if (current)
+    // let current = document.getElementById('projectContainer');
+    // if (current)
+    // {
+    //     current.remove()
+    // }
+    let project = document.getElementById('projectContainer');
+    if (project)
     {
-        current.remove()
+        let existing = project.children;
+        for (let children of existing)
+        {
+            children.remove();
+        }
     }
-    return (
-        <div id="projectContainer"></div>
-    )
 }
 
 function Project() {
     let { projectId } = useParams();
-    let existing = document.getElementsByName("Canvas");
-    for (let canvas of existing)
-    {
-        canvas.remove();
-    }
     switch (projectId)
     {
         case "HexDots":

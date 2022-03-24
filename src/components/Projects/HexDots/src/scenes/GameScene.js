@@ -74,12 +74,13 @@ class GameScene extends Phaser.Scene{
             let score = thisScene.selectedStack.scoreStack();
             thisScene.score += score.points**2;
             if (score.loop) {
-                thisScene.score += thisScene.clearColor(thisScene.gameboard, thisScene.selectedStack.currentColor);
+                var loopScore = thisScene.clearColor(thisScene.gameboard, thisScene.selectedStack.currentColor);
+                thisScene.score += loopScore;
             }
             thisScene.scoreText.setText(`Score: ${thisScene.score}`);
             thisScene.fallDots();
             thisScene.refillDots();
-            console.log(score.points, score.loop)
+            console.log(score.points**2, loopScore)
         });
         this.gameboard = [];
         for (let i = 0; i < this.boardsize; i++)
