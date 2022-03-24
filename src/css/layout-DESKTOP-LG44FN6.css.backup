@@ -1,0 +1,48 @@
+body {
+   background-color: black;
+}
+
+div {
+   box-sizing: border-box;
+}
+
+.megaboard {
+   background-color: black;
+   color: #CAD2C5;
+   /* border: 1px solid black; */
+}
+
+.profile-image {
+   height: auto;
+}
+
+.main-container {
+   height: 50vh;
+   background-color: #CAD2C5;
+   border: 1px solid black;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+}
+
+.card {
+   border: 1px solid black;
+   height: 40px;
+}
+
+.subnav {
+   border: 1px solid black;
+   background-color: #CAD2C5;
+}
+
+.main-content {
+   grid-column: 4/13;
+}
+
+.subnav-item {
+   list-style-type: none;
+   text-decoration: underline;
+   color: #52796F;
+}

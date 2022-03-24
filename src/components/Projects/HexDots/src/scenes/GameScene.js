@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import SelectedStack from '../classes/SelectedStack'
 import Dot from '../classes/Dot'
+// import dust from '.public/assets/dust.png';
 class GameScene extends Phaser.Scene{
 
     constructor(game, boardSize, colorCount, hexWidth, hexHeight, showHexes) {
@@ -44,7 +45,7 @@ class GameScene extends Phaser.Scene{
 
     preload()
     {
-        this.load.image('dust', 'assets/dust.png');
+        this.load.image('dust', '../assets/dust.png');
         this.load.image('hexagon', 'assets/Hexagon.png');
     }
 
