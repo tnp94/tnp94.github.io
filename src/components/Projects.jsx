@@ -100,6 +100,8 @@ function Project() {
             return (
                 <div>
                     <p>I created this game in Phaser 3. Click and drag adjacent dots to select them. Selecting 2 or more dots will clear them when you release the mouse button.</p>
+                    <p>Creating a loop (starting and ending on the same dot) will cause all dots of that color on the screen to be cleared.</p>
+                    <p>You get the number of dots selected, squared points when you clear, plus 1 point for each other dot cleared with a loop.</p>
                 </div>
             )
         }
