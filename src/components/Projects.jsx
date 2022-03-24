@@ -18,7 +18,11 @@ class Projects extends React.Component {
                     <h3>Projects</h3>
                     <ul className="p-0 font-weight-bold">
                         <li className="subnav-item">
+<<<<<<< HEAD
                             <Link className="text-dark" to="/projects/HexDots">Hex Dots</Link>
+=======
+                            <Link className="text-dark" to="/projects/project1">Project 1</Link>
+>>>>>>> 1f280f966e8d25dca760ea1d1fc33a508f39437f
                         </li>
                         <li className="subnav-item">
                             <Link className="text-dark" to="/projects/project2">Project 2</Link>
