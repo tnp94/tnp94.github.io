@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, HashRouter, Route, useRouteMatch } from "react-router-dom";
 
-class Home extends React.Component {
+class HexDots extends React.Component {
 
     componentDidMount() {
         
@@ -29,4 +29,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home;
+export default HexDots;
