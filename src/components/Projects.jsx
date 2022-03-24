@@ -52,11 +52,6 @@ function ProjectList() {
 }
 
 function ClearProject() {
-    // let current = document.getElementById('projectContainer');
-    // if (current)
-    // {
-    //     current.remove()
-    // }
     let project = document.getElementById('projectContainer');
     if (project)
     {
@@ -75,11 +70,25 @@ function Project() {
         case "HexDots":
         {
             
-            const boardsize = 11;
-            const colorCount = 7;
+            const urlParams = new URLSearchParams(window.location.search);
+            const boardSizeInput = urlParams.get('boardSize');
+            const colorCountInput = urlParams.get('colorCount');
+            
+            
+            var boardsize = 8;
+            var colorCount = 5;
             const hexWidth = 62;
             const hexHeight = 70;
             const showHexes = true;
+
+            if (boardSizeInput)
+            {
+                boardsize = parseInt(boardSizeInput);
+            }
+            if (colorCountInput)
+            {
+                colorCount = parseInt(colorCountInput);
+            }
     
             let gameScene = new GameScene('Game', boardsize, colorCount, hexWidth, hexHeight, showHexes);
     
@@ -102,6 +111,14 @@ function Project() {
                     <p>I created this game in Phaser 3. Click and drag adjacent dots to select them. Selecting 2 or more dots will clear them when you release the mouse button.</p>
                     <p>Creating a loop (starting and ending on the same dot) will cause all dots of that color on the screen to be cleared.</p>
                     <p>You get the number of dots selected, squared points when you clear, plus 1 point for each other dot cleared with a loop.</p>
+                    <form>
+                        <label htmlFor="boardSize">Rows (Max 11): </label>
+                        <input placeholder="Default: 8" name="boardSize" type="text" id="tbBoardSize" onChange={ClearProject()}/>
+                        <br />
+                        <label htmlFor="colorCount">Colors (Max 7): </label>
+                        <input placeholder="Default: 5" name="colorCount" type="text" id="tbColors" />
+                        <input type="submit" onClick={ClearProject()} value="Launch"/>
+                    </form>
                 </div>
             )
         }

@@ -47,3 +47,7 @@ div {
    text-decoration: underline;
    color: #52796F;
 }
+
+#projectContainer * {
+width: 100%;
+}

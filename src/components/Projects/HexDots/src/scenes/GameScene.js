@@ -45,7 +45,8 @@ class GameScene extends Phaser.Scene{
 
     preload()
     {
-        this.load.image('dust', '../assets/dust.png');
+        this.load.html('gameConfigForm', 'assets/text/configForm.html');
+        this.load.image('dust', 'assets/dust.png');
         this.load.image('hexagon', 'assets/Hexagon.png');
     }
 
